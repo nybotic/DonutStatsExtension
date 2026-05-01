@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DonutStats Player Search</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="shell">
+      <header class="masthead">
+        <img class="brand-mark" src="icons/icon-48.png" alt="" aria-hidden="true">
+        <div>
+          <p class="eyebrow">DonutSMP Stats</p>
+          <h1>Player Search</h1>
+        </div>
+      </header>
+
+      <form id="search-form" class="search" autocomplete="off">
+        <label for="player-input">Minecraft username</label>
+        <div class="search-row">
+          <input id="player-input" name="player" type="text" placeholder="Search player name..." spellcheck="false" required>
+          <button type="submit" title="Search player" aria-label="Search player">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m21 21-4.35-4.35m1.35-5.15a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Z"/>
+            </svg>
+          </button>
+        </div>
+      </form>
+
+      <section id="status" class="status" hidden></section>
+
+      <section id="favorite-wrap" class="account-section" hidden>
+        <div class="section-title">
+          <span>Favorites</span>
+          <button id="clear-favorites" type="button">Clear</button>
+        </div>
+        <div id="favorite-list" class="account-list"></div>
+      </section>
+
+      <section id="recent-wrap" class="account-section" hidden>
+        <div class="section-title">
+          <span>Recent</span>
+          <button id="clear-recent" type="button">Clear</button>
+        </div>
+        <div id="recent-list" class="account-list"></div>
+      </section>
+
+      <section id="result" class="result" hidden>
+        <div class="player-top">
+          <img id="avatar" class="avatar" alt="">
+          <div class="player-copy">
+            <h2 id="player-name"></h2>
+            <p id="profile-meta"></p>
+          </div>
+          <button id="favorite-toggle" class="favorite-toggle" type="button" title="Add favorite" aria-label="Add favorite">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m12 2.8 2.84 5.76 6.36.92-4.6 4.49 1.08 6.33L12 17.31 6.32 20.3l1.08-6.33-4.6-4.49 6.36-.92L12 2.8Z"/>
+            </svg>
+          </button>
+        </div>
+
+        <div id="stats-grid" class="stats-grid"></div>
+      </section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

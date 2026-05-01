@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "DonutStats Player Search",
+  "description": "Search DonutSMP player names from your browser and open their DonutStats profiles.",
+  "version": "1.0.4",
+  "action": {
+    "default_title": "DonutStats Player Search",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "host_permissions": [
+    "https://donutstats.org/*"
+  ],
+  "permissions": [
+    "storage"
+  ]
+}
