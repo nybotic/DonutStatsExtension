@@ -7,7 +7,10 @@ A small Chrome/Edge extension for searching DonutSMP player names from the toolb
 1. Open `chrome://extensions` or `edge://extensions`.
 2. Turn on `Developer mode`.
 3. Choose `Load unpacked`.
-4. Select this folder: `C:\Users\aaron\Documents\projects\donutstatsextension`.
+4. Select this folder: ``.
+
+## Install through Chrome Web Store
+1. 
 
 ## Use
 
