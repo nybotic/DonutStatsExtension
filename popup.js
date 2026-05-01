@@ -42,11 +42,19 @@ form.addEventListener("submit", async (event) => {
   const username = sanitizeUsername(input.value);
 
   if (!username) {
+    hideResult();
     showStatus("Enter a Minecraft username first.", true);
     return;
   }
 
   await searchPlayer(username);
+});
+
+input.addEventListener("input", () => {
+  if (!sanitizeUsername(input.value)) {
+    hideResult();
+    hideStatus();
+  }
 });
 
 clearRecent.addEventListener("click", async () => {
